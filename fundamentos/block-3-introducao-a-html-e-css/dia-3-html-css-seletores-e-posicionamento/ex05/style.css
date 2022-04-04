@@ -1,0 +1,41 @@
+ol{
+    background-color: yellow;
+}
+
+ol:nth-child(even){
+    color: green;
+}
+
+ol:nth-child(odd){
+    text-transform: capitalize;
+}
+
+h1, h2, h3{
+    color: red;
+}
+
+h1, h2, h3 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: 700em;
+}
+
+#linguagens li:not(:nth-of-type(n +4)){
+    color: blue;
+}
+
+.java{
+    background-color: pink;
+}
+
+/* Exercício não completo devido dúvidas
+
+ "Na listagem de linguagens de programação, faça com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilize uma cor de fundo rosa."" 
+ */
