@@ -1,0 +1,86 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+
+/* SET DEFAUlT */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(95, 180, 175);
+}
+
+/* IDS */
+
+#navegation{
+    text-align: center;
+    display: block;
+    border: 1px solid black;
+    border-radius: 0px 0px 25px 25px;
+    background-color: rgb(21, 68, 65);
+}
+
+#navegation li{
+    display: inline-block;
+    padding: 5px;
+    padding-right: 40px;
+
+}
+
+#navegation a:hover{
+    color:rgb(29, 217, 201);
+}
+
+#navegation a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* CLASSES */
+
+/* OTHER */
+
+header{
+    background-color: rgb(232, 248, 234);
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+main{
+    background-color: white;
+    max-width: 980px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding: 30px;
+    font-size: 4em;
+    color: rgb(21, 68, 65);
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(21, 68, 65);
+}
+
+footer{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
