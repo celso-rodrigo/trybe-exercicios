@@ -1,0 +1,12 @@
+h1{
+    font-size: 65px;
+    color: orange;
+}
+
+li{
+    background-color: grey;
+}
+
+.mudar-cor{
+    background-color: darkgrey;
+}
