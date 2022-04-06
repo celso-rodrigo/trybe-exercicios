@@ -22,3 +22,37 @@
 // O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
 // Resultado: R$ 2.612,55.
 
+let grossSalary = 3000;
+let netSalary = 0;
+let inss = 0;
+let incomeTax = 0;
+
+// Calulando INSS
+if (grossSalary <= 1556.94) {
+  inss = grossSalary*0.08;
+} else if (grossSalary > 1556.94 && grossSalary <= 2594.92) {
+  inss = grossSalary*0.09;
+} else if (grossSalary > 2594.92 && grossSalary <= 5189.82) {
+  inss = grossSalary*0.11;
+} else {
+  inss = 570.88 ;
+}
+
+grossSalary =  grossSalary - inss;
+
+// Calculando Imposto
+if (grossSalary <= 1903.98) {
+  incomeTax = 0
+} else if (grossSalary > 1903.98 && grossSalary <=  2826.65) {
+  incomeTax = grossSalary * 0.075 - 142.8;
+} else if (grossSalary > 2826.65 && grossSalary <= 3751.05) {
+  incomeTax = grossSalary * 0.15 - 354.8;
+} else if (grossSalary > 3751.05 && grossSalary <= 4664.68) {
+  incomeTax = grossSalary * 0.225 - 636.13;
+} else {
+  incomeTax = grossSalary * 0.275 - 869.36;
+}
+
+netSalary = grossSalary - incomeTax;
+
+console.log(`O salário líquido é de R$${netSalary}`);

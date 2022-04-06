@@ -5,3 +5,12 @@
 // valorCustoTotal = valorCusto + impostoSobreOCusto
 // lucro = valorVenda - valorCustoTotal (lucro de um produto)
 
+const buyPrice = 10;
+const sellPrice = 12.75;
+let profit = sellPrice-(buyPrice + buyPrice*0.2);
+
+if (buyPrice < 0 || sellPrice < 0) {
+  console.log("Erro! O valor do produto não pode ser menor que zero.");
+} else {
+  console.log(`O lucro foi de R$${profit*1000}, R$${profit} por produto.`);
+}
