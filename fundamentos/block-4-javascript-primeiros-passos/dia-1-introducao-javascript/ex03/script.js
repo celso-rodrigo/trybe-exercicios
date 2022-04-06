@@ -5,7 +5,7 @@
 const base = 5;
 let height = 8;
 const area = base*height;
-const perimeter = 2*height+base
+const perimeter = 2*height+base;
 
-console.log(`O Triângulo tem uma base de ${base} e uma altura de ${height}.`)
-console.log(`A área do triângulo é de ${area} e o seu perímetro é de ${perimeter}.`)
+console.log(`O Triângulo tem uma base de ${base} e uma altura de ${height}.`);
+console.log(`A área do triângulo é de ${area} e o seu perímetro é de ${perimeter}.`);
