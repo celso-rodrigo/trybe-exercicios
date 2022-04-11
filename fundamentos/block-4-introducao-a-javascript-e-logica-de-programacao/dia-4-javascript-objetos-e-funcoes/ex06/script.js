@@ -31,4 +31,4 @@ leitor.livrosFavoritos.push({
 console.log('-----//----------//----------//----------//----------//-----');
 // Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos".
 
-console.log(`${leitor.nome} tem dois livros favoritos: ${leitor.livrosFavoritos[0].titulo} e ${leitor.livrosFavoritos[1].titulo}.`);
+console.log(`${leitor.nome} tem ${leitor.livrosFavoritos.length} livros favoritos: ${leitor.livrosFavoritos[0].titulo} e ${leitor.livrosFavoritos[1].titulo}.`);
