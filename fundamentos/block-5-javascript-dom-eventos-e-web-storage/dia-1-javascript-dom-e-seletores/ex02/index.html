@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="paragrafo">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="paragrafo">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      // Para praticar, substitua todas as funções que você usou no exercício anterior por querySelector e/ou querySelectorAll
+      document.querySelector('#page-title').innerText = 'Não gosto muito de filmes'; 
+      document.querySelector('#second-paragraph').innerText = "Aqui jaz segundo parágrafo! :'("; 
+      document.querySelector('#subtitle').innerText = '90 minutos é muito para uma história de uma só vez e pouco para uma história completa.';
+      let paragrafos = document.querySelector('.paragrafo').style.textDecoration = 'underline';
+      document.querySelector('h4').style.color = 'green';
+    </script>
+  </body>
+</html>
