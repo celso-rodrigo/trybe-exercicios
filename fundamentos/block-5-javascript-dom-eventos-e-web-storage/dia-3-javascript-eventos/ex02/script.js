@@ -132,7 +132,16 @@ function unZoomDay(originElement) {
 // Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
+const addTaskBtn = document.getElementById('btn-add');
+const addTaskText = document.getElementById('task-input');
+addTaskBtn.addEventListener('click', taskManager)
 
+function taskManager(task) {
+  const taksFinder = document.querySelector('.my-tasks')
+  taskMaker = document.createElement('span');
+  taskMaker.innerText = addTaskText.value;
+  taksFinder.appendChild(taskMaker)
+}
 
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
