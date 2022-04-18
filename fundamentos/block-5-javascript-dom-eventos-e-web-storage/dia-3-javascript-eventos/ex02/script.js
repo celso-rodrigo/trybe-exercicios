@@ -139,9 +139,13 @@ const addTaskText = document.getElementById('task-input');
 addTaskBtn.addEventListener('click', taskManager)
 
 function taskManager(task) {
-  taskSpanMaker = document.createElement('span');
-  taskSpanMaker.innerText = addTaskText.value;
-  taksFinder.appendChild(taskSpanMaker)
+  if (addTaskText.value === ''){
+    alert('Por favor, insira um compromisso.')
+  } else {
+    taskSpanMaker = document.createElement('span');
+    taskSpanMaker.innerText = addTaskText.value;
+    taksFinder.appendChild(taskSpanMaker)
+  }
 }
 
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
@@ -151,9 +155,11 @@ function taskManager(task) {
 addTaskBtn.addEventListener('click', taskColor)
 
 function taskColor(cor) {
-  const colorRandomizer = ['red', 'green', 'yellow', 'pink', 'orange', 'purple', 'blue'];
-  let color = colorRandomizer[Math.floor(Math.random()*colorRandomizer.length)];
-  taskColorPlace(color);
+  if (addTaskText.value !== ''){
+    const colorRandomizer = ['red', 'green', 'yellow', 'pink', 'orange', 'purple', 'blue'];
+    let color = colorRandomizer[Math.floor(Math.random()*colorRandomizer.length)];
+    taskColorPlace(color);
+  }
 }
 
 function taskColorPlace(chamada) {
@@ -201,3 +207,14 @@ function addTaskColor(originElement) {
 // Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
 // Ao pressionar a tecla "enter" o evento também deverá ser disparado.
 // Dica - Propriedade: key .
+
+// Referência: https://www.codegrepper.com/code-examples/javascript/addeventlistener+enter+key
+
+addTaskText.addEventListener('keypress', checkKey)
+
+function checkKey(originElement){
+  if (originElement.keyCode === 13){
+    taskManager();
+    taskColor();
+  } 
+}
