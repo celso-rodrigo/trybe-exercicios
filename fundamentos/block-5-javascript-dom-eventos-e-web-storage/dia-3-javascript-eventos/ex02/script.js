@@ -150,23 +150,33 @@ function taskManager(task) {
 addTaskBtn.addEventListener('click', taskColor)
 
 function taskColor(cor) {
-  console.log('chamada')
-  const colorRandomizer = ['red', 'green', 'yellow', 'pink', 'orange', 'purple'];
+  const colorRandomizer = ['red', 'green', 'yellow', 'pink', 'orange', 'purple', 'blue'];
   let color = colorRandomizer[Math.floor(Math.random()*colorRandomizer.length)];
-  taskColorPlace(color)
+  taskColorPlace(color);
 }
 
 function taskColorPlace(chamada) {
-  console.log('chamada')
   taskDivMaker = document.createElement('div');
   taskDivMaker.style.backgroundColor = chamada;
-  taksFinder.appendChild(taskDivMaker)
+  taskDivMaker.classList = 'task';
+  taskDivMaker.addEventListener('click', colorDivSelected)
+  taksFinder.appendChild(taskDivMaker);
 }
 
 // Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
 // Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
 
+function colorDivSelected(originElement) {
+  let allTaskDivs = document.querySelectorAll('.task');
 
+  for (let taskDiv of allTaskDivs){
+    if (taskDiv.classList.contains('selected')){
+      taskDiv.classList = 'task';
+    }
+  }
+  
+  originElement.target.classList += ' selected';
+}
 
 // Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
 // Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
