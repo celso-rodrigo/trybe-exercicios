@@ -49,3 +49,17 @@ function createDays(){
     month.appendChild(dayMaker);
   }
 }
+
+// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+// Adicione a este botão a ID "btn-holiday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+feriadoBtn('Feriados')
+function feriadoBtn(phrase) {
+  const btnMaker = document.createElement('button');
+  const divFinder = document.querySelector('.buttons-container');
+  btnMaker.innerText = phrase;
+  btnMaker.id = 'btn-holiday';
+  console.log(divFinder)
+  divFinder.appendChild(btnMaker);
+}
