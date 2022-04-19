@@ -1,0 +1,80 @@
+/* SET DEFAULT */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERAL */
+
+main {
+  padding: 50px 150px 25px 150px;
+}
+
+h3 {
+  font-size: 1.75em;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+footer {
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/* IDS */
+
+#preferences {
+  border: 1px solid black;
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#preferences h1 {
+  font-size: 2.5em;
+}
+
+#preferences li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+#preferences input {
+  width: 100px;
+  padding: 1px;
+}
+
+#preferences label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#lorem0 {
+  text-align: center;
+  font-size: 2em;
+}
+
+#lorem0 h2 {
+  font-size: 3em;
+}
+
+#lorem1 p, #lorem2 p, #lorem3 p{
+  font-size: 1em;
+  text-indent: 5px;
+  text-align: justify;
+}
+
+/* Classes */
+
+.flexDisplay {
+  display: flex;
+}
+
+.flexDisplay p{
+  margin-right: 30px;
+}
