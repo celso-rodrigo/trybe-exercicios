@@ -7,20 +7,16 @@
 
 /* GENERAL */
 
-main {
-  padding: 50px 150px 25px 150px;
-}
-
 h3 {
-  font-size: 1.75em;
+  font-size: 30px;
   padding-top: 20px;
   padding-bottom: 5px;
 }
 
 footer {
-  font-size: 0.8em;
+  font-size: 14px;
   text-align: center;
-  padding-bottom: 5px;
+  padding-top: 25px;
 }
 
 /* IDS */
@@ -32,10 +28,11 @@ footer {
   margin: auto;
   margin-top: 50px;
   text-align: center;
+  border-radius: 20px;
 }
 
 #preferences h1 {
-  font-size: 2.5em;
+  font-size: 70px;
 }
 
 #preferences li {
@@ -46,6 +43,7 @@ footer {
 #preferences input {
   width: 100px;
   padding: 1px;
+  text-align: center;
 }
 
 #preferences label {
@@ -54,17 +52,26 @@ footer {
   margin-top: 10px;
 }
 
+#allContent  {
+  max-width: 1700px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 40px 10px 40px;
+  border-radius: 25px;
+}
+
 #lorem0 {
   text-align: center;
-  font-size: 2em;
+  font-size: 30px;
 }
 
 #lorem0 h2 {
-  font-size: 3em;
+  font-size: 100px;
 }
 
 #lorem1 p, #lorem2 p, #lorem3 p{
-  font-size: 1em;
+  font-size: 16px;
   text-indent: 5px;
   text-align: justify;
 }
