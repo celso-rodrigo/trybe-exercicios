@@ -24,11 +24,6 @@ h1 {
   letter-spacing: 10px;
 }
 
-fieldset {
-  border: none;
-  text-align: justify;
-}
-
 fieldset *{
   font-size: 20px;
 }
@@ -39,7 +34,11 @@ input, textarea {
 }
 
 input[type="text"], input[type="email"]{
-  margin-top: 10px;
+  margin: 10px 0 0 5px;
+}
+
+input[type="radio"]{
+  margin: 0 5px 0 10px;
 }
 
 button {
@@ -47,6 +46,7 @@ button {
   font-size: 2em;
   margin-left: 20px;
   border-radius: 20px;
+  background-color: rgb(227, 229, 231);;
 }
 
 button:hover{
@@ -63,10 +63,6 @@ textarea{
   display: block;
 }
 
-.radioInput input{
-  margin: 0 5px 0 10px;
-}
-
 /* IDS */
 #borderEffect {
   border: 1px solid black;
@@ -77,6 +73,7 @@ textarea{
   background-color: rgb(227, 229, 231);
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   line-height: 30px;
+  font-size: 1.3em;
 }
 
 #destination, #reason, #date, #checks {
