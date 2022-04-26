@@ -1,0 +1,95 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+/* SET DEFAULTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  background-color: rgb(202, 210, 215);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(60, 60, 64);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  font-size: 10em;
+  margin: 40px 0 0 0;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 10px;
+}
+
+fieldset {
+  border: none;
+  text-align: justify;
+}
+
+fieldset *{
+  font-size: 20px;
+}
+
+input, textarea {
+  padding: 5px;
+  background-color: rgb(250, 250, 250);
+}
+
+input[type="text"], input[type="email"]{
+  margin-top: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 2em;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+button:hover{
+  background-color: rgb(60, 60, 64);
+  color: white;
+}
+
+textarea{
+  width: 100%;
+}
+
+/* CLASSES */
+.radioInput {
+  display: block;
+}
+
+.radioInput input{
+  margin: 0 5px 0 10px;
+}
+
+/* IDS */
+#borderEffect {
+  border: 1px solid black;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgb(227, 229, 231);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  line-height: 30px;
+}
+
+#destination, #reason, #date, #checks {
+  margin-top: 20px;
+}
+
+#agree, #news *{
+  display: inline;
+}
+
+#buttons {
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
