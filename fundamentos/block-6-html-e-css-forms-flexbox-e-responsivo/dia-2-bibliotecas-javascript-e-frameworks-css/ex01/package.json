@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2"
+    "just-validate": "^3.5.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "pikaday": "^1.8.2"
   }
 }
