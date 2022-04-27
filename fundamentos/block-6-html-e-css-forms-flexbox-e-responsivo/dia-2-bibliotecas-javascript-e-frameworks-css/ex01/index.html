@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrybeTrip</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+</head>
+<body>
+  <header>
+    <h1 class="teal-text text-darken-1 center-align">TrybeTrip</h1>
+  </header>
+
+  <main class="container">
+    <form action="" method="GET" class="container">
+      <div class="section">
+        <label for="nameInput">Nome Completo:
+          <input type="text" name="user" id="nameInput" maxlength="40" minlength="10">
+        </label>
+        <label for="emailInput">Email:
+          <input type="email" name="email" id="emailInput" maxlength="50" minlength="10">
+        </label>
+      </div>
+
+      <div class="section">
+        <p>Destino favorito:</p>
+        <label for="city">
+          <input type="radio" name="favLocation" id="city" class="with-gap" checked>
+          <span>Cidade</span>
+        </label>
+        <label for="grassField">
+          <input type="radio" name="favLocation" id="grassField" class="with-gap">
+          <span>Campo</span>
+        </label>
+        <label for="beach">
+          <input type="radio" name="favLocation" id="beach" class="with-gap">
+          <span>Praia</span>
+        </label>
+        <label for="mountain">
+          <input type="radio" name="favLocation" id="mountain" class="with-gap">
+          <span>Montanhas</span>
+        </label>
+      </div>
+
+      <div class="section">
+        <label for="reasonTxt">
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+          <textarea name="reasonTxt" id="reasonTxt" cols="30" rows="10" class="materialize-textarea" maxlength="500"></textarea>
+        </label>
+      </div>
+
+      <div class="section">
+        <label for="travelDate">
+          <p>Melhora data para viagem</p>
+          <input type="date" name="travelDate" id="travelDate" class="datepicker">
+        </label>
+      </div>
+
+      <div class="section">
+        <label for="reciveNews">
+          <input type="checkbox" name="reciveNews" id="reciveNews" class="filled-in left-align">
+          <span>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</span>
+        </label>
+        <div class="divider"></div>
+        <label for="agreeTerms">
+          <input type="checkbox" name="agreeTerms" id="agreeTerms" class="filled-in right-align">
+          <span>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</span>
+        </label>
+      </div>
+      
+      <div class="container center-align section">
+        <button type="submit" id="submitBtn" class="btn">Enviar</button>
+        <button type="reset" id="clearBtn" class="btn">Limpar</button>
+      </div>
+    </form>
+  </main>
+  <script src="dist/js/DatePickerX.min.js"></script>
+</body>
+</html>
