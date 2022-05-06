@@ -1,9 +1,9 @@
 function longestWord(phrase) {
   const phraseArray = phrase.split(' ')
   let biggestWord = phraseArray[0];
-  for (let cont3 = 0; cont3 < phraseArray.length; cont3 += 1) {
-    if (phraseArray[cont3].length > biggestWord.length) {
-      biggestWord = phraseArray[cont3];
+  for (let cont = 0; cont < phraseArray.length; cont += 1) {
+    if (phraseArray[cont].length > biggestWord.length) {
+      biggestWord = phraseArray[cont];
     }
   }
   console.log(biggestWord)
