@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Calculadora</title>
+</head>
+<body>
+  <p>Informe dois números para realizar a soma:</p>
+  <label for='value1'>Valor 1:</label>
+  <input type='text' id='value1'>
+  <label for='value2'>Valor 2:</label>
+  <input type='text' id='value2'>
+  <button id='button'>Somar</button>
+  <p id='result'></p>
+  <script>
+    function clearInput() {
+      document.getElementById('value1').value = '';
+      document.getElementById('value2').value = '';
+    }
+
+    function setErrorMessage(error) {
+      document.getElementById('result').innerHTML = `${error}`;
+    }
+
+    function testErrors() {
+      const value1 = document.getElementById('value1').value;
+      const value2 = document.getElementById('value2').value;
+      try {
+        if (value1 === '' || value2 === '') {
+          throw new Error("Erro! As caixas não podem estar vazias.");
+        } else if (isNaN(value1) === true || isNaN(value2) === true) {
+          throw new Error("Erro! Os valores precisam ser números.");
+        } else {
+          sum(value1, value2);
+        }
+      } catch (error) {
+        throw setErrorMessage(error.message);
+      }
+    }
+
+    function sum(num1, num2) {
+      const result = parseInt(num1) + parseInt(num2);
+      document.getElementById('result').innerHTML = `Resultado: ${result}`;
+      clearInput();
+    }
+    
+    window.onload = () => {
+      const button = document.getElementById('button');
+      button.addEventListener('click', testErrors);
+    }
+  </script>
+</body>
+</html>
