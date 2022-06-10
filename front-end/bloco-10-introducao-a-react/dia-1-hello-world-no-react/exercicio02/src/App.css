@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(55, 55, 55);
+}
+
+#root {
+  background-color: white;
+  max-width: 80vw;
+  border-radius: 25px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin: 40px;
+  font-size: 4rem;
+  color: rgb(55, 55, 55);
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2{
+  margin-top: 25px;
+}
+
+.footer {
+  text-align: center;
+  font-size: .6rem;
+}
