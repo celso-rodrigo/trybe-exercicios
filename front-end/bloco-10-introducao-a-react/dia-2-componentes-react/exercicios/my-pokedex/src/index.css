@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(235, 235, 235);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 5vh auto;
+  padding: 20px;
+  background-color: white;
+  max-width: 80vw;
+  border: 2px solid rgb(222, 63, 47);
+  border-radius: 25px;
+}
+
+h1 {
+  width: 100%;
+  color: rgb(222, 63, 47);
+  text-align: center;
+  font-size: 5rem;
+}
+
+.poke-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(222, 62, 47, 0.7);
+  border: 2px solid rgb(222, 63, 47);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.poke-container * {
+  color: white;
+  text-align: center;
+  margin: 0 0 5px 0;
+  align-self: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.poke-img-container img {
+  width: 125%;
+  height: 125%;
+}
+
