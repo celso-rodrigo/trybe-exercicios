@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+button {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+
+.odd {
+  background-color: white;
+}
+
+.even {
+  background-color: green;
+}
