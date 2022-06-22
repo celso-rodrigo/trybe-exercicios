@@ -16,13 +16,14 @@ class Button extends React.Component {
   btnClickUpdate() {
     this.setState((oldState, _props) => ({
       btnClicks: oldState.btnClicks + 1,
-    }));
-    this.changeBtnColor();
+    }), () => {
+      this.changeBtnColor();
+    });
   }
 
   changeBtnColor() {
     this.setState ({
-      colorClass: this.state.btnClicks % 2 === 0 ? 'odd' : 'even'
+      colorClass: this.state.btnClicks % 2 === 0 ? 'even' : 'odd'
     })
   }
 
