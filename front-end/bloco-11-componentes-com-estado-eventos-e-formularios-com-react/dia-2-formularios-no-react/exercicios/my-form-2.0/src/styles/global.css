@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+main {
+  background-color: white;
+  max-width: 90vw;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 45px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(253, 253, 253);
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+select {
+  background-color: white;
+}
+
+input[type='text'], input[type='email'], input[type='name'], select {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 1.1rem;
+  max-height: 50px;
+}
+
+.radio-container {
+  padding: 10px;
+}
+
+.radio-container label{
+  font-size: 1.5rem;
+}
+
+.radio-container p {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.radio-container input[type='radio']{
+  margin: 0 15px 0 5px;
+}
